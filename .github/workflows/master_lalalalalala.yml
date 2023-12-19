@@ -19,7 +19,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: .net-app
-          path: ${{ github.workspace }}
+          path: |
+            ${{ github.workspace }}/header.shtm
+            ${{ github.workspace }}/index.shtm
+            
           
 
   deploy:
